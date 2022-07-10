@@ -1,5 +1,7 @@
-<nav class='navbar navbar-expand-lg navbar-dark bg-dark'>
-    <a class='navbar-brand' href='/'>F8 Courses</a>
+<nav class='navbar navbar-expand-lg navbar-dark bg-dark navbar-wrapper'>
+    <a class='navbar-brand' href='/'>
+        <span>L</span>O<span>G</span>O
+    </a>
     <button
         class='navbar-toggler'
         type='button'
@@ -17,9 +19,6 @@
             <li class='nav-item active'>
                 <a class='nav-link' href='#'>Home <span class='sr-only'>(current)</span></a>
             </li>
-            <li class='nav-item'>
-                <a class='nav-link' href='#'>Link</a>
-            </li>
             <li class='nav-item dropdown'>
                 <a
                     class='nav-link dropdown-toggle'
@@ -30,18 +29,27 @@
                     aria-haspopup='true'
                     aria-expanded='false'
                 >
-                    Dropdown
+                    Shop
                 </a>
-                <div class='dropdown-menu' aria-labelledby='navbarDropdown'>
-                    <a class='dropdown-item' href='#'>Action</a>
-                    <a class='dropdown-item' href='#'>Another action</a>
+                <div class='dropdown-menu sub-menu' aria-labelledby='navbarDropdown'>
+                    <div class='inner-menu'>
+                        <a class='dropdown-item' href='#'>Action</a>
+                        <a class='dropdown-item' href='#'>Another action</a>
+                    </div>
+
                     <div class='dropdown-divider'></div>
                     <a class='dropdown-item' href='#'>Something else here</a>
                 </div>
             </li>
             <li class='nav-item'>
-                <a class='nav-link disabled' href='#'>Disabled</a>
+                <a class='nav-link' href='#'>Blog</a>
             </li>
+            <li class='nav-item'>
+                <a class='nav-link' href='#'>Contact</a>
+            </li>
+            {{! <li class='nav-item'>
+                <a class='nav-link disabled' href='#'>Disabled</a>
+            </li> }}
         </ul>
         <form class='form-inline my-2 my-lg-0'>
             <input class='form-control mr-sm-2' type='search' placeholder='Search' aria-label='Search' />

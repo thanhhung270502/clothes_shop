@@ -1,0 +1,52 @@
+.navbar-wrapper {
+    background-color: var(--blue-black) !important;
+    height: 70px;
+    font-family: Roboto, 'Helvetica Neue', Arial, 'Noto Sans', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
+        'Segoe UI Symbol', 'Noto Color Emoji';
+    padding: 0.5rem 1.5rem;
+}
+
+.navbar-brand {
+    margin-left: 3.5rem;
+    margin-right: 3.5rem;
+    font-weight: 600;
+    font-size: 1.9rem;
+
+    span {
+        color: var(--primary);
+    }
+}
+
+.nav-item {
+    font-size: 1.1rem;
+    padding: 0px 4px;
+}
+
+.inner-menu {
+}
+
+.dropdown-menu {
+    background-color: var(--blue-black) !important;
+    padding: 0.25rem 0;
+    border-top: 1px solid var(--white);
+    min-width: 13.5rem !important;
+    // box-shadow: 0px 1px 1px rgb(0 0 0 / 12%);
+
+    a {
+        font-weight: bold !important;
+    }
+}
+
+.dropdown-item {
+    color: var(--white);
+    padding: 0.5rem 1.5rem;
+
+    &:hover {
+        background-color: var(--primary) !important;
+        color: var(--white);
+    }
+}
+
+.dropdown-divider {
+    margin: 0.2rem !important;
+}

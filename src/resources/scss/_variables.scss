@@ -1,1 +1,13 @@
-$red-color: red;
+:root {
+    --primary: #fe2c55;
+    --black: #000;
+    --text-color: #333;
+    --blue-black: #161d27;
+    --white: #f3f3f4;
+    --yellow: #ffc174;
+
+    // Default layout
+    --default-layout-header-height: 160px;
+    --default-layout-width: 140rem;
+    --default-layout-horizontal-spacer: 24px;
+}
