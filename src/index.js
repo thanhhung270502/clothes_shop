@@ -33,12 +33,12 @@ app.engine(
     }),
 );
 app.set('view engine', 'hbs');
-// app.set('views', path.join(__dirname, 'resources', 'views'));
+app.set('views', path.join(__dirname, 'resources', 'views'));
 
 // routes init
 // route(app);
 
-app.get('/', (req, res) => res.send('Hello World!!'));
+app.get('/', (req, res) => res.render('home'));
 
 app.listen(port, () => {
     console.log(`App listening on port ${port}`);
