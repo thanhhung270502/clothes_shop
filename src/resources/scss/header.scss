@@ -3,25 +3,34 @@
     height: 70px;
     font-family: Roboto, 'Helvetica Neue', Arial, 'Noto Sans', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
         'Segoe UI Symbol', 'Noto Color Emoji';
-    padding: 0.5rem 1.5rem;
+    padding: 0.5rem 4.5rem;
     position: fixed !important;
     width: 100%;
+    z-index: 100;
 }
 
 .navbar-brand {
-    margin-left: 3.5rem;
-    margin-right: 3.5rem;
+    margin-left: 0rem;
+    margin-right: 2.5rem;
     font-weight: 600;
     font-size: 1.9rem;
 
     span {
-        color: var(--primary);
+        color: var(--green);
     }
 }
 
 .nav-item {
     font-size: 1.1rem;
-    padding: 0px 4px;
+    padding: 0px 10px;
+}
+
+.nav-link {
+    color: var(--white) !important;
+}
+
+.active a {
+    color: var(--green) !important;
 }
 
 .inner-menu {
@@ -44,7 +53,7 @@
     padding: 0.5rem 1.5rem;
 
     &:hover {
-        background-color: var(--primary) !important;
+        background-color: var(--green) !important;
         color: var(--white);
     }
 }

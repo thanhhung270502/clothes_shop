@@ -13,3 +13,41 @@
 .banner img {
     width: 100%;
 }
+
+.card {
+    border: 1px solid rgba(0, 0, 0, 0.25);
+    text-align: center;
+}
+
+.card-products-item {
+    margin-top: 2.5rem;
+}
+
+.card-body {
+    h5 {
+        font-size: 1.2rem;
+    }
+
+    p {
+        font-size: 0.95rem;
+    }
+
+    a {
+        font-size: 0.8rem;
+        color: var(--text-color);
+    }
+
+    a:hover {
+        text-decoration: none;
+    }
+}
+
+.btn-css {
+    padding: 8px 16px !important;
+    background-color: var(--blue-black);
+    color: var(--white) !important;
+
+    &:hover {
+        background-color: var(--green);
+    }
+}

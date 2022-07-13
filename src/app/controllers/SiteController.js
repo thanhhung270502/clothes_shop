@@ -1,7 +1,13 @@
+const Product = require('../models/Product');
+
 class SiteConTroller {
     // [GET] /
-    index(req, res) {
-        res.render('home');
+    index(req, res, next) {
+        Product.find({})
+            .then((products) => res.render('home', { products }))
+            .catch(next);
+
+        // res.render('home');
     }
 
     // [GET] /search
