@@ -12,11 +12,11 @@
         {{#each products}}
             <div class='col-sm-6 col-lg-4' style='padding: 0 40px'>
                 <div class='card card-products-item'>
-                    <a href=''>
+                    <a href='/shop/{{this._doc.slug}}'>
                         <img src={{this._doc.image}} class='card-img-top' alt='{{this._doc.name}}' />
                     </a>
                     <div class='card-body'>
-                        <a href=''>
+                        <a href='/shop/{{this._doc.slug}}'>
                             <h5 class='card-title'>{{this._doc.name}}</h5>
                         </a>
                         <p class='card-text'>{{this._doc.price}}</p>
