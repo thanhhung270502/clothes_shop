@@ -1,28 +1,82 @@
 <div class='wrapper-item'>
-    <div id='carouselExampleIndicators' class='carousel slide' data-ride='carousel'>
-        <ol class='carousel-indicators'>
-            <li data-target='#carouselExampleIndicators' data-slide-to='0' class='active'></li>
-            <li data-target='#carouselExampleIndicators' data-slide-to='1'></li>
-            <li data-target='#carouselExampleIndicators' data-slide-to='2'></li>
-        </ol>
-        <div class='carousel-inner'>
-            <div class='carousel-item active'>
-                <img class='d-block w-100' src={{products.image}} alt='First slide' />
-            </div>
-            <div class='carousel-item'>
-                <img src={{products.image_red}} class='d-block w-100' alt='Second slide' />
-            </div>
-            <div class='carousel-item'>
-                <img class='d-block w-100' src={{products.image_black}} alt='Third slide' />
+    <div class='item__header'>
+        <div class='item__inner-header'>
+            <a href='/'>Tramg chủ</a>
+            >
+            <a href='/'>Danh mục</a>
+            >
+            <a href='/'>Polo</a>
+        </div>
+    </div>
+    <div class='row item__row'>
+        <div class='col'>
+            <div class='item__image'>
+                <div id='carouselExampleIndicators' class='carousel slide' data-ride='carousel'>
+                    <ol class='carousel-indicators'>
+                        <li data-target='#carouselExampleIndicators' data-slide-to='0' class='active'></li>
+                        <li data-target='#carouselExampleIndicators' data-slide-to='1'></li>
+                        <li data-target='#carouselExampleIndicators' data-slide-to='2'></li>
+                    </ol>
+                    <div class='carousel-inner'>
+                        <div class='carousel-item active'>
+                            <img class='d-block w-100' src={{products.image}} alt='First slide' />
+                        </div>
+                        <div class='carousel-item'>
+                            <img src={{products.image_red}} class='d-block w-100' alt='Second slide' />
+                        </div>
+                        <div class='carousel-item'>
+                            <img class='d-block w-100' src={{products.image_black}} alt='Third slide' />
+                        </div>
+                    </div>
+                    <a
+                        class='carousel-control-prev carousel-icon'
+                        href='#carouselExampleIndicators'
+                        role='button'
+                        data-slide='prev'
+                    >
+                        <span class='carousel-control-prev-icon' aria-hidden='true'></span>
+                        <span class='sr-only'>Previous</span>
+                    </a>
+                    <a
+                        class='carousel-control-next carousel-icon'
+                        href='#carouselExampleIndicators'
+                        role='button'
+                        data-slide='next'
+                    >
+                        <span class='carousel-control-next-icon' aria-hidden='true'></span>
+                        <span class='sr-only'>Next</span>
+                    </a>
+                </div>
             </div>
         </div>
-        <a class='carousel-control-prev' href='#carouselExampleIndicators' role='button' data-slide='prev'>
-            <span class='carousel-control-prev-icon' aria-hidden='true'></span>
-            <span class='sr-only'>Previous</span>
-        </a>
-        <a class='carousel-control-next' href='#carouselExampleIndicators' role='button' data-slide='next'>
-            <span class='carousel-control-next-icon' aria-hidden='true'></span>
-            <span class='sr-only'>Next</span>
-        </a>
+        <div class='col'>
+            <div class='item__info'>
+                <h3 class='item__info-name'>{{products.name}}</h3>
+                <h5 class='item__info-price'>{{products.price}}</h5>
+                <h5 class='item__info-status'>Trạng thái: Còn hàng</h5>
+                <p>{{products.description}}</p>
+                <p>- {{products.description1}}</p>
+                <p>- {{products.description2}}</p>
+                <p>- {{products.description3}}</p>
+                <p>- {{products.description4}}</p>
+                <div class='item__size'>
+                    <label class='item__size-title'>Color: </label>
+                    <span class='item__size-button item__size-circle item__size-button-active red'>R</span>
+                    <span class='item__size-button item__size-circle black'>B</span>
+                    <span class='item__size-button item__size-circle white'>W</span>
+                </div>
+                <div class='item__size'>
+                    <label class='item__size-title'>Size: </label>
+                    <span class='item__size-button item__size-button-active'>M</span>
+                    <span class='item__size-button'>L</span>
+                    <span class='item__size-button'>XL</span>
+                </div>
+                <div class='row-flex'>
+                    <button class='item__buy-button black'>THÊM VÀO GIỎ</button>
+                    <button class='item__buy-button red'>MUA NGAY</button>
+                </div>
+            </div>
+        </div>
+
     </div>
 </div>

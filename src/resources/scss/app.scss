@@ -1,10 +1,12 @@
 @import 'variables';
 @import 'header.scss';
+@import 'item-product.scss';
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
 
 .container {
-    padding-top: 70px;
-    max-width: 1450px;
+    max-width: 1600px;
+    width: 100%;
+    padding: 70px 0 0;
 }
 
 .banner {
@@ -15,13 +17,19 @@
     width: 100%;
 }
 
+.row {
+    width: 100%;
+    margin-left: 0px;
+    margin-right: 0px;
+}
+
 .card {
     border: 1px solid rgba(0, 0, 0, 0.25);
     text-align: center;
 }
 
 .card-products-item {
-    margin-top: 2.5rem;
+    margin: 1.5rem 0;
 }
 
 .card-body {
@@ -49,6 +57,12 @@
     color: var(--white) !important;
 
     &:hover {
-        background-color: var(--green);
+        background-color: var(--primary);
+    }
+}
+
+.carousel-icon {
+    span {
+        color: var(--blue-black);
     }
 }

@@ -1,0 +1,130 @@
+.wrapper-item {
+    // padding: 15px 55px;
+}
+
+.item__header {
+    display: flex;
+    align-items: center;
+    min-height: 50px;
+    width: 100%;
+    margin-bottom: 20px;
+    background-color: var(--gray);
+    color: var(--text-color);
+}
+
+.item__row {
+    width: 100%;
+    padding: 20px 100px;
+}
+
+.item__inner-header {
+    margin: 0 70px;
+
+    a {
+        color: var(--text-color);
+        text-decoration: none;
+    }
+}
+
+.item__image {
+}
+
+.item__info {
+    p {
+        margin-bottom: 0.5rem;
+    }
+}
+
+.item__info-name {
+    &::after {
+        content: '';
+        display: block;
+        width: 150px;
+        height: 1px;
+        background: #000000;
+        margin: 20px 0;
+    }
+}
+
+.item__info-price {
+    font-size: 1.4rem;
+    padding: 10px 0;
+    color: var(--primary);
+}
+
+.item__info-status {
+    padding: 10px 0 25px;
+    font-size: 1rem;
+    opacity: 0.8;
+    font-weight: 400;
+}
+
+.item__size {
+    padding: 10px 0;
+}
+
+.item__size-title {
+    margin-bottom: 15px;
+    margin-right: 10px;
+    font-weight: 400;
+    font-size: 1rem;
+    color: #000;
+    min-width: 65px;
+}
+
+.item__size-circle {
+    width: 30px;
+    height: 30px;
+    padding: 3px;
+    border-radius: 50%;
+    border: 1px solid #000;
+    line-height: 33px !important;
+}
+
+.item__size-button {
+    display: inline-block;
+    margin-right: 10px;
+    background: #fff;
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+    border: 1px solid #d0d0d0;
+    font-size: 1rem;
+    font-weight: 500;
+    text-align: center;
+    cursor: pointer;
+}
+
+.item__size-button-active {
+    background-color: var(--text-color);
+    color: var(--white);
+}
+
+.red {
+    background-color: var(--primary);
+    color: var(--primary);
+}
+
+.black {
+    background-color: var(--text-color);
+    color: var(--text-color);
+}
+
+.white {
+    background-color: var(--white);
+    color: var(--white);
+}
+
+.item__buy-button {
+    width: 250px;
+    height: 45px;
+    color: var(--white) !important;
+    margin-right: 20px;
+    margin-top: 15px;
+    cursor: pointer;
+
+    &:hover {
+        background-color: #fff;
+        color: var(--text-color) !important;
+    }
+}

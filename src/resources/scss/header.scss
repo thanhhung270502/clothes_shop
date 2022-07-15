@@ -16,7 +16,7 @@
     font-size: 1.9rem;
 
     span {
-        color: var(--green);
+        color: var(--primary);
     }
 }
 
@@ -30,7 +30,7 @@
 }
 
 .active a {
-    color: var(--green) !important;
+    color: var(--primary) !important;
 }
 
 .inner-menu {
@@ -53,11 +53,20 @@
     padding: 0.5rem 1.5rem;
 
     &:hover {
-        background-color: var(--green) !important;
+        background-color: var(--primary) !important;
         color: var(--white);
     }
 }
 
 .dropdown-divider {
     margin: 0.2rem !important;
+}
+
+.btn-outline-success {
+    color: var(--primary);
+    border-color: var(--primary);
+
+    &:hover {
+        background-color: var(--primary);
+    }
 }
