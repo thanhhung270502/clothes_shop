@@ -5,7 +5,8 @@ const shopConTroller = require('../app/controllers/ShopConTroller');
 
 router.get('/create', shopConTroller.create);
 router.post('/store', shopConTroller.store);
+router.get('/:id/edit', shopConTroller.edit);
+router.put('/:id', shopConTroller.update);
 router.get('/:slug', shopConTroller.show);
-// router.use('/', shopConTroller.index);
 
 module.exports = router;

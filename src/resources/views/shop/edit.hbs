@@ -1,0 +1,19 @@
+<div class='mt-4 create-wrapper'>
+    <h3>Update product</h3>
+
+    <form class='mt-4' method='POST' action='/shop/{{product._id}}?_method=PUT'>
+        <div class='form-group'>
+            <label for='name'>Tên sản phẩm</label>
+            <input type='text' class='form-control' value='{{product.name}}' id='name' name='name' />
+        </div>
+        <div class='form-group'>
+            <label for='price'>Giá sản phẩm</label>
+            <input type='text' class='form-control' value='{{product.price}}' id='price' name='price' />
+        </div>
+        <div class='form-group'>
+            <label for='image'>Hình ảnh sản phẩm</label>
+            <textarea class='form-control' id='image' name='image'>{{product.image}}</textarea>
+        </div>
+        <button type='submit' class='btn btn-primary'>Save</button>
+    </form>
+</div>

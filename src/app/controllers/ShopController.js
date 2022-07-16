@@ -20,10 +20,12 @@ class ShopConTroller {
             })
             .catch(next);
     }
+
     // [GET] /shop/create
     create(req, res, next) {
         res.render('shop/create');
     }
+
     // [POST] /shop/store
     store(req, res, next) {
         const product = new Product(req.body);
@@ -31,6 +33,20 @@ class ShopConTroller {
         product
             .save()
             .then(() => res.redirect('/'))
+            .catch(next);
+    }
+
+    // [GET] /shop/:id/edit
+    edit(req, res, next) {
+        Product.findById(req.params.id)
+            .then((product) => res.render('shop/edit', { product: mongooseToObject(product) }))
+            .catch(next);
+    }
+
+    // [PUT] /shop/:id
+    update(req, res, next) {
+        Product.updateOne({ _id: req.params.id }, req.body)
+            .then(() => res.redirect('/me/stored/products'))
             .catch(next);
     }
 }
