@@ -7,6 +7,7 @@ router.get('/create', shopConTroller.create);
 router.post('/store', shopConTroller.store);
 router.get('/:id/edit', shopConTroller.edit);
 router.put('/:id', shopConTroller.update);
+router.delete('/:id', shopConTroller.destroy);
 router.get('/:slug', shopConTroller.show);
 
 module.exports = router;
