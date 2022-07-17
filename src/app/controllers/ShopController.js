@@ -32,7 +32,7 @@ class ShopConTroller {
 
         product
             .save()
-            .then(() => res.redirect('/'))
+            .then(() => res.redirect('/me/stored/products'))
             .catch(next);
     }
 
@@ -51,7 +51,21 @@ class ShopConTroller {
     }
     // [DELETE] /shop/:id
     destroy(req, res, next) {
+        Product.delete({ _id: req.params.id })
+            .then(() => res.redirect('back'))
+            .catch(next);
+    }
+
+    // [DELETE] /shop/:id/force
+    forceDestroy(req, res, next) {
         Product.deleteOne({ _id: req.params.id })
+            .then(() => res.redirect('back'))
+            .catch(next);
+    }
+
+    // [PATCH] /shop/:id
+    restore(req, res, next) {
+        Product.restore({ _id: req.params.id })
             .then(() => res.redirect('back'))
             .catch(next);
     }

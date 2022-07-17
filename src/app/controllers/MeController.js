@@ -7,6 +7,13 @@ class MeController {
             .then((products) => res.render('me/stored-products', { products }))
             .catch(next);
     }
+
+    // [GET] /me/trash/products
+    trashProducts(req, res, next) {
+        Product.findDeleted({})
+            .then((products) => res.render('me/trash-products', { products }))
+            .catch(next);
+    }
 }
 
 module.exports = new MeController();
