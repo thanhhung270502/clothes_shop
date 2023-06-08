@@ -11,6 +11,16 @@ class ShopConTroller {
     //     // res.render('home');
     // }
 
+    // [GET] /shop/all-products
+    show_all_products(req, res, next) {
+        Product.find({})
+            .then((products) => {
+                res.render('shop/all_products', { products });
+                // res.json(product);
+            })
+            .catch(next);
+    }
+
     // [GET] /shop/:slug
     show(req, res, next) {
         Product.findOne({ slug: req.params.slug })

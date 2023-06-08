@@ -1,6 +1,7 @@
 @import 'variables';
 @import 'header.scss';
 @import 'item-product.scss';
+@import 'all_products.scss';
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
 
 .container {
@@ -15,6 +16,10 @@
 
 .banner img {
     width: 100%;
+}
+
+.hot_sales {
+    padding-top: 25px;
 }
 
 .row {
